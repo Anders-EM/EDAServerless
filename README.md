@@ -5,4 +5,12 @@ During the GOTO EDA day I participated in a hand-on lab demonstrating the capabi
 
 The application accepts the coffee order, generates a userID, orderID, and token to pass through the order manager and order processor step functions to manage the order while it is in progress, time out customers if they take too long to order, and react in case a barista takes too long to order.
 
-THe OrderProcessor handles accepting orders and determining if the shop is open, whether or not it has the capacity to accept another order, await acceptance and completion of the order, and time out the order if it takes too long.
+Serverlesspresso Order Processing Workflow:
+This AWS Step Functions state machine manages the order processing for the Serverlesspresso application. It automates the workflow from checking the shop's availability to order completion, seamlessly handling various tasks and potential issues like shop capacity and task timeouts.
+
+Key Features
+Shop Status Check: Determines if the shop is open and ready to process orders.
+Order Capacity Management: Ensures the shop doesn't exceed its capacity to handle orders.
+Order Progress Tracking: Manages order states from initiation to fulfillment, using task tokens to track progress and handle timeouts.
+Error and Timeout Handling: Gracefully manages scenarios where customers or baristas don't act, ensuring the system remains responsive and accurate.
+Event Notifications: Emits detailed events at each stage, allowing for external systems integration or monitoring setups.
