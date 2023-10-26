@@ -9,6 +9,7 @@ Serverlesspresso Order Processing Workflow:
 This AWS Step Functions state machine manages the order processing for the Serverlesspresso application. It automates the workflow from checking the shop's availability to order completion, seamlessly handling various tasks and potential issues like shop capacity and task timeouts.
 
 Key Features
+
 Shop Status Check: Determines if the shop is open and ready to process orders.
 
 Order Capacity Management: Ensures the shop doesn't exceed its capacity to handle orders.
