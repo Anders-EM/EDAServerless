@@ -5,4 +5,4 @@ During the GOTO EDA day I participated in a hand-on lab demonstrating the capabi
 
 The application accepts the coffee order, generates a userID, orderID, and token to pass through the order manager and order processor step functions to manage the order while it is in progress, time out customers if they take too long to order, and react in case a barista takes too long to order.
 
-The code provided handles accepting orders and determining if the shop is open, whether or not it has the capacity to accept another order, await acceptance and completion of the order, and time out the order if it takes too long.
+THe OrderProcessor handles accepting orders and determining if the shop is open, whether or not it has the capacity to accept another order, await acceptance and completion of the order, and time out the order if it takes too long.
