@@ -10,16 +10,24 @@ This AWS Step Functions state machine manages the order processing for the Serve
 
 Key Features
 Shop Status Check: Determines if the shop is open and ready to process orders.
+
 Order Capacity Management: Ensures the shop doesn't exceed its capacity to handle orders.
+
 Order Progress Tracking: Manages order states from initiation to fulfillment, using task tokens to track progress and handle timeouts.
+
 Error and Timeout Handling: Gracefully manages scenarios where customers or baristas don't act, ensuring the system remains responsive and accurate.
+
 Event Notifications: Emits detailed events at each stage, allowing for external systems integration or monitoring setups.
 
 Serverlesspresso Order Management State Machine
 This AWS Step Functions state machine streamlines the decision-making process for handling customer orders in the Serverlesspresso application. It efficiently routes various order actions like making, completing, canceling, or unmaking orders, updating the DynamoDB records, and notifying the necessary services through EventBridge.
 
 Key Features
+
 Dynamic Order Decision Routing: Directs the workflow based on the action value in the input, leading to various outcomes.
+
 Order Record Management: Updates order records in DynamoDB based on the action taken, ensuring data consistency.
+
 Comprehensive Event Notifications: Uses EventBridge to emit detailed events regarding order processing, keeping all system components informed.
+
 Robust Error Handling: Employs AWS Lambda and DynamoDB service integrations for reliability, using retries and effective error navigation.
